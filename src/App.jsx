@@ -10,16 +10,16 @@ function App() {
 
       <main>
           <div className="Hero-container">
-            <section id="about"></section>  
+            <teg id="about"></teg>  
               <Hero />
           </div>
 
-          <section id='projects'></section>
+          <teg id='projects'></teg>
             <div className='projects-container'>
               <Projects />
             </div>
 
-          <section id='contact'></section>
+          <teg id='contact'></teg>
             <div className='contact-container'>
               <Contact />
             </div>
