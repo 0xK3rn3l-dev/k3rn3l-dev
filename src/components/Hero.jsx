@@ -1,49 +1,13 @@
-import { useState, useEffect } from 'react';
-import '../styles/Hero.css';
 import useScrollAnimation from '../hooks/useScrollAnimation';
+import useTypingText from '../hooks/useTypingText';
+import '../styles/Hero.css';
+
 
 const nicknames = ["0xK3rn3l", "Developer"];
 
-
 function Hero() {
-    const [displayText, setDisplayText] = useState('');
-    const [nicknameIndex, setNicknameIndex] = useState(0);
-    const [isDeleting, setIsDeleting] = useState(false);
-
     const [heroRef, heroVisible] = useScrollAnimation();
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            const currentName = nicknames[nicknameIndex]
-            
-            if (!isDeleting) {
-                if (displayText.length < currentName.length) {
-                    const nextText = currentName.slice(0, displayText.length + 1);
-                    setDisplayText(nextText);
-                }
-                else {
-                    setIsDeleting(true)
-                }
-            } else {
-                if (displayText.length > 0) {
-                    const nextText = displayText.slice(0, -1);
-                    setDisplayText(nextText);
-                
-                } else {
-                    setNicknameIndex(prev => {
-                        const next = prev + 1;
-                        if (next >= nicknames.length) {
-                            return 0;
-                        }
-                        return next;
-                    });
-                    setIsDeleting(false)
-                }
-  
-            }
-        }, 100);
-        return () => clearInterval(timer);
-    }, [displayText,nicknameIndex,isDeleting]);
+    const displayText = useTypingText(nicknames, 100, 50, 100);
 
     return (
         <>
@@ -54,11 +18,11 @@ function Hero() {
                 <h1 className="hero-title">Im {displayText}</h1>
                 <hr></hr>
                 <h2>About me:</h2>
-                <p>Im enthusiast who like programming and learn how things work in real world</p>
-                <p>I have expiriens in web applications, backend and frontend, im not professional, <b>but truly want to will be</b></p>
-                <p>Also sometimes research deep level, recent time i started to learn MASM32</p>
+                <p>Im an enthusiast who likes programming and learning how things work in real world.</p>
+                <p>I have experience in web applications, both backend and frontend. I'm not a professional yet, <b>but i truly want to be</b></p>
+                <p>Sometimes I also research low-level stuff, like MASM32</p>
                 <p>So, i love to study and understand new things</p>
-                <p>I also like VideoGames</p>
+                <p>I also like video games</p>
                 <hr></hr>
                 <br />
 
