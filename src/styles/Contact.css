@@ -1,0 +1,51 @@
+.contact-title {
+    color: #fcf8fd;
+    font-size: 3rem;
+    font-family: 'Courier New', monospace;
+    margin-bottom: 1rem;
+}
+
+.contact-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #8A2BE2, #4B0082, transparent);
+    margin-bottom: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    color: #ebebeb;
+    font-size: 1.2rem;
+    font-family: 'Courier New', monospace;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.contact-link:hover {
+    color: #b87cff;
+    border-bottom-color: #8A2BE2;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .contact-links {
+        gap: 1rem;
+    }
+    
+    .contact-link {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}

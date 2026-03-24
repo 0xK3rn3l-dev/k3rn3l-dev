@@ -1,0 +1,54 @@
+/*.header-title {
+    color: #9b59b6;  /* фиолетовый 
+    font-size: 3rem;
+    font-family: monospace;
+    text-shadow: 0 0 10px rgba(155, 89, 182, 0.5);
+} */
+
+.hero-title {
+    color: #9b59b6;
+    font-size: 3rem;
+    font-family: 'Courier New', monospace;
+    filter: drop-shadow(0 0 5px #9b59b6);
+    animation: glowFilter 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes glowFilter {
+    from {
+        filter: drop-shadow(0 0 3px #9b59b6);
+    }
+    to {
+        filter: drop-shadow(0 0 10px #8f3cc0) drop-shadow(0 0 15px #713888);
+    }
+}
+
+
+/* Анимация для всего контейнера */
+.hero-content-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hero-content-animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.stack-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.stack-icons img {
+    transition: transform 0.2s ease;
+}
+
+.stack-icons img:hover {
+    transform: scale(1.1);
+}

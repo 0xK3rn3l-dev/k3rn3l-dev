@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+}
+
+.Hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+    margin-left: 3%;     /* 5% от ширины экрана */
+    /* или */
+    /* transform: translateX(5%); */
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    margin-left: 3%; 
+}
