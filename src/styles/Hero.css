@@ -51,7 +51,7 @@
 /* Мобильная адаптация */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     
     .hero-content-animate h1:first-child {
