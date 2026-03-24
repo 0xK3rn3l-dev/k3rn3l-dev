@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import '../styles/Hero.css';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 
-const nicknames = ["0xK3rn3l", "Developer", "CodeWizard"];
+const nicknames = ["0xK3rn3l", "Developer"];
 
 
 function Hero() {
