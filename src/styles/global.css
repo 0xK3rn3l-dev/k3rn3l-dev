@@ -16,7 +16,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    text-align: left;
+    text-align: center;
     margin-left: 3%;     /* 5% от ширины экрана */
     /* или */
     /* transform: translateX(5%); */
@@ -28,4 +28,25 @@ body {
     padding: 2rem;
     text-align: center;
     margin-left: 3%; 
+}
+
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .Hero-container {
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+    
+    .projects-container {
+        padding: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .contact-container {
+        padding: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

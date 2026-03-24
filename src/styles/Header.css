@@ -72,3 +72,28 @@
 .nav-links a:hover {
     color: #9b59b6;
 }
+
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .header {
+        padding: 0.75rem 1rem;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .logo a {
+        font-size: 1.2rem;
+    }
+    
+    .nav-links {
+        gap: 1.5rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}

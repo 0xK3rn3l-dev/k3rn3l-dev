@@ -80,3 +80,40 @@
 .project-link:hover {
     text-decoration: underline;
 }
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .projects-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    .projects-wrapper {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .project-card {
+        min-width: 240px;
+        max-width: 240px;
+    }
+    
+    .project-image-container {
+        height: 150px;
+    }
+    
+    .project-name {
+        font-size: 1rem;
+    }
+    
+    .project-link {
+        font-size: 0.85rem;
+    }
+    
+    .project-status {
+        font-size: 0.7rem;
+        padding: 2px 8px;
+    }
+}

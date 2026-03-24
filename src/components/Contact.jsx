@@ -2,7 +2,7 @@ import '../styles/Contact.css';
 
 function Contact() {
     const contacts = [
-        { id: 1, name: "GitHub", url: "https://0xk3rn3l-dev.github.io/k3rn3l-dev/" },
+        { id: 1, name: "GitHub", url: "https://github.com/0xK3rn3l-dev" },
         { id: 2, name: "Telegram", url: "https://t.me/K3rn3l_Dev" },
         { id: 3, name: "Email", url: "mailto:eme175326@gmail.com" } 
     ];

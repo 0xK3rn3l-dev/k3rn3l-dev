@@ -1,9 +1,4 @@
-/*.header-title {
-    color: #9b59b6;  /* фиолетовый 
-    font-size: 3rem;
-    font-family: monospace;
-    text-shadow: 0 0 10px rgba(155, 89, 182, 0.5);
-} */
+
 
 .hero-title {
     color: #9b59b6;
@@ -51,4 +46,33 @@
 
 .stack-icons img:hover {
     transform: scale(1.1);
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.2rem;
+    }
+    
+    .hero-content-animate h1:first-child {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content-animate h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-content-animate p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .stack-icons {
+        gap: 10px;
+    }
+    
+    .stack-icons img {
+        width: 35px;
+        height: 35px;
+    }
 }
